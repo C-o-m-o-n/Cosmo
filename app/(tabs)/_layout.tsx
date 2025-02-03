@@ -42,6 +42,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <Entypo name="images" size={24} color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="mrp"
+        options={{
+          title: 'Mrp',
+          tabBarIcon: ({ color }) => <Entypo name="images" size={24} color={color} />,
+        }}
+      />
 
       <Tabs.Screen
         name="explore"
