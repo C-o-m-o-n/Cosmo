@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
+import Entypo from '@expo/vector-icons/Entypo';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
@@ -33,6 +34,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
+
+      <Tabs.Screen
+        name="apod"
+        options={{
+          title: 'Apod',
+          tabBarIcon: ({ color }) => <Entypo name="images" size={24} color={color} />,
+        }}
+      />
+
       <Tabs.Screen
         name="explore"
         options={{
