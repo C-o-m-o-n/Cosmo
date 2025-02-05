@@ -1,0 +1,196 @@
+{
+    "photos": [
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295286,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919518EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295287,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919476EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295288,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919434EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295289,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919392EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295290,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919350EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295291,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919308EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295292,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919266EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295293,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919224EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295294,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919182EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295295,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919140EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295296,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919098EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295297,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919056EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295298,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791919014EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295299,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791918972EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295300,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791918742EDR_F1122826CCAM02443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295301,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791918516EDR_F1122826CCAM01443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295302,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ccam/CR0_791917834EDR_F1122826CCAM01443M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295309,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ncam/NRB_791916577EDR_F1122826NCAM00258M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295304,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/fcam/FLB_791932001EDR_F1122826FHAZ00337M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295305,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/fcam/FLB_791928995EDR_F1122826FHAZ00200M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295303,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/fcam/FRB_791932001EDR_F1122826FHAZ00337M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295308,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/ncam/NLB_791916577EDR_F1122826NCAM00258M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295307,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/rcam/RLB_791932049EDR_F1122826RHAZ00337M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        },
+        {
+            "camera": "[Object]",
+            "earth_date": "2025-02-04",
+            "id": 1295306,
+            "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04443/opgs/edr/rcam/RRB_791932049EDR_F1122826RHAZ00337M_.JPG",
+            "rover": "[Object]",
+            "sol": 4443
+        }
+    ]
+}
