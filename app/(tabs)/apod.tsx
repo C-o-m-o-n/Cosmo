@@ -56,6 +56,8 @@ export default function ApodScreen() {
   };
 
   return (
+
+    <>
     <ScrollView
       style={styles.container}
       contentContainerStyle={{ flexGrow: 1 }}
@@ -69,14 +71,16 @@ export default function ApodScreen() {
       {/* Full-Screen Image */}
       <Image source={{ uri: apod?.url }} style={styles.image} />
 
-      {/* Date Picker Button */}
-      <TouchableOpacity style={styles.datePickerContainer} onPress={() => setShowPicker(true)}>
-        <Ionicons name="calendar-outline" size={35} color="white" />
-        {/* <Button title="Select Date"  /> */}
-      </TouchableOpacity>
+      {/* Title & Explanation */}
+      <View style={styles.textContainer}>
+        <Text style={styles.title}>{apod?.title}</Text>
+        <Text style={styles.description}>{apod?.explanation}</Text>
+      </View>
 
-      {/* Show Date Picker */}
-      {showPicker && (
+    </ScrollView>
+
+     {/* Show Date Picker */}
+     {showPicker && (
         <DateTimePicker value={date} mode="date" display="default" onChange={onDateChange} />
       )}
 
@@ -86,12 +90,12 @@ export default function ApodScreen() {
         {/* <Text style={styles.arrow}>⬆️</Text> */}
       </Animated.View>
 
-      {/* Title & Explanation */}
-      <View style={styles.textContainer}>
-        <Text style={styles.title}>{apod?.title}</Text>
-        <Text style={styles.description}>{apod?.explanation}</Text>
-      </View>
-    </ScrollView>
+       {/* Date Picker Button */}
+       <TouchableOpacity style={styles.datePickerContainer} onPress={() => setShowPicker(true)}>
+        <Ionicons name="calendar-outline" size={35} color="white" />
+        {/* <Button title="Select Date"  /> */}
+      </TouchableOpacity>
+    </>
   );
 }
 
@@ -106,7 +110,7 @@ const styles = StyleSheet.create({
   // Swipe Up Indicator
   swipeIndicator: {
     position: "absolute",
-    bottom: "40%",
+    bottom: "5%",
     left: 0,
     right: 0,
     alignItems: "center",
@@ -114,7 +118,7 @@ const styles = StyleSheet.create({
   },
   datePickerContainer: {
     position: "absolute",
-    bottom: "40%",
+    bottom: "5%",
     right: 0,
     borderRadius: "50%",
     backgroundColor: "rgba(0, 150, 0, 0.5)",

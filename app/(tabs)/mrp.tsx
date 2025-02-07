@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { View, Text, Image, StyleSheet, ScrollView, FlatList, Dimensions, Animated, ActivityIndicator, Platform, TouchableOpacity } from "react-native";
+import { View, Text, Image, StyleSheet, ScrollView, FlatList, Dimensions, Animated, ActivityIndicator, Platform, TouchableOpacity, SafeAreaView } from "react-native";
 import axios from "axios";
-import { Picker } from "@react-native-picker/picker";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import DateTimePicker from "@react-native-community/datetimepicker";
 import {Photo} from "../../constants/Types";
@@ -30,7 +29,7 @@ const MarsRoverPhotosScreen = () => {
         `https://api.nasa.gov/mars-photos/api/v1/rovers/${selectedRover}/photos?earth_date=${formattedDate}&api_key=${API_KEY}`
       );
 
-      console.log("response: ", response.data.photos[0].rover);
+      // console.log("response: ", response.data.photos[0].rover);
       setRoverPhotos(response.data.photos || []);
     } catch (error) {
       console.error("Error fetching Mars Rover photos:", error);
@@ -81,17 +80,25 @@ const MarsRoverPhotosScreen = () => {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Mars Rover Photos</Text>
 
+    <>
+    <View style={styles.container}>
       {/* Show Date Picker */}
       {showPicker && (
         <DateTimePicker value={date} mode="date" display="default" onChange={onDateChange} />
       )}
 
-      {/* Rover Selection */}
-      <View style={styles.roverPickerContainer}>
-        <Text style={styles.roverPickerLabel}>Select Rover:</Text>
+      <FlatList
+        data={roverPhotos}
+        renderItem={renderPhoto}
+        keyExtractor={(item) => item.id}
+        numColumns={3} // Adjust number of columns based on design
+        contentContainerStyle={styles.grid}
+      />
+    </View>
+
+    {/* Rover Selection */}
+    <View style={styles.roverPickerContainer}>
 
         <View style={styles.roverBtnsContainer}>
           <TouchableOpacity style={styles.roverBtn} onPress={() => handleSetRover("Curiosity")}>
@@ -104,29 +111,22 @@ const MarsRoverPhotosScreen = () => {
             <Text style={{color: "#fff",}}>Spirit</Text>
           </TouchableOpacity>
         </View>
-
-        {/* Date Picker Button */}
-      <TouchableOpacity style={styles.datePickerContainer} onPress={() => setShowPicker(true)}>
-        <Ionicons name="calendar-outline" size={30} color="white" />
-      </TouchableOpacity>
       </View>
 
-      <FlatList
-        data={roverPhotos}
-        renderItem={renderPhoto}
-        keyExtractor={(item) => item.id}
-        numColumns={3} // Adjust number of columns based on design
-        contentContainerStyle={styles.grid}
-      />
-    </View>
+     {/* Date Picker Button */}
+     <TouchableOpacity style={styles.datePickerContainer} onPress={() => setShowPicker(true)}>
+        <Ionicons name="calendar-outline" size={30} color="white" />
+      </TouchableOpacity>
+
+      <SafeAreaView style={{}}/>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#F5F5F5",
-    paddingTop: 16,
+    // paddingTop: 26,
   },
   title: {
     fontSize: 24,
@@ -144,18 +144,20 @@ const styles = StyleSheet.create({
     margin: 4,
     borderRadius: 8,
     overflow: "hidden",
-    backgroundColor: "#FFF",
+    backgroundColor: "rgba(0, 150, 0, 0.5)",
     elevation: 2,
-  },
-  photo: {
     width: (screenWidth - 32) / 3, // Adjust for numColumns
     height: (screenWidth - 32) / 3,
+  },
+  photo: {
+    width: "100%",
+    height: "100%",
     resizeMode: "cover",
   },
 
     datePickerContainer: {
       position: "absolute",
-      // bottom: "70%",
+      bottom: "5%",
       right: 0,
       borderRadius: "50%",
       backgroundColor: "rgba(0, 150, 0, 0.5)",
@@ -168,7 +170,7 @@ const styles = StyleSheet.create({
     roverPickerContainer: { padding: 2, color: "#fff" },
     roverPickerLabel: { fontSize: 18, color: "#fff", marginBottom: 10 },
     roverBtnsContainer: {
-      paddingHorizontal: 20,
+      // paddingHorizontal: 20,
        display: "flex", 
        flexDirection: "row",
        gap: 10,
@@ -179,17 +181,15 @@ const styles = StyleSheet.create({
     noPhotosText: { color: "#fff", fontSize: 16 },
     roverImageContainer: { 
       display: "flex",
-      borderWidth: 1, 
-      borderColor: "red", 
+      borderWidth: 1,  
       borderRadius: 10 },
 
       roverBtn: {
-        backgroundColor: "blue",
+        backgroundColor: "rgba(0, 150, 0, 0.5)",
         color: "#fff",
         padding: 10,
         borderRadius: 10,
         textAlign: "center",
-        marginBottom: 10,
       },
 });
 
